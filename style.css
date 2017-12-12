@@ -1,0 +1,266 @@
+/*
+Theme Name: Faszination Tolkien
+Theme URI: http://www.faszination-tolkien.de
+Description: Das WP-Theme für die HdR-Seite
+Author: Vladimir Simovic
+Version: 1.0
+Tags: HdR, Tolkien, Herr der Ringe, Hobbit, Mittelerde
+*/
+body {background: #425c3b url(img/body.jpg) repeat-x; font: 100% georgia, serif; margin: 0; padding: 46px 0; text-align: center;}
+
+#container {background: #faf9f5 url(img/mitte.jpg) repeat-y; color: #2b3a27; font-size: 15px; line-height: 22px; margin: 0 auto; position: relative; text-align: left; max-width: 960px;}
+
+/* Der Kopfbereich */
+#kopfbereich    {background: url(img/kopf.jpg) no-repeat; height: 223px; padding: 1px 50px; margin-top: 40px;}
+.logo           {margin: 100px 0 0 0; line-height: 1; font-size: 60px; font-weight: normal;}
+.logo a         {color: #8e9c8a; text-decoration: none;} .logo span {color: #2b3a27;}
+.logo a:hover   {color: #8e9c8a;}
+.unterzeile     {color: #425c3b; font-size: 20px; font-style: italic; font-weight: normal; margin: 0 0 0 3px;}
+
+.brotkruemel {font-size: 14px; margin: 17px 50px 12px 50px; /*text-align: right; width: 530px;*/} .brotkruemel a {color: #842; text-decoration: none;}
+.home .brotkruemel {display: none;}
+
+/* Der mittlere Bereich: Inhalt + Sidebar */
+#mitte {background: url(img/trennlinie.jpg) no-repeat bottom left; margin: 12px 50px 0 50px; padding-bottom: 30px;}
+.home #mitte {margin-top: 30px;}
+
+#menu-hauptnavi {list-style: none; margin: 0; padding: 0; position: absolute; top: -86px; left: 0;}
+.pagemenu li {float: left; position: relative;}
+.pagemenu a {color: #eee; text-decoration: none; float: left; line-height: 40px; padding: 0 8px; margin: 0 1px;}
+.pagemenu a:first-child {margin-left: none;}
+.pagemenu a:hover, .pagemenu .current-menu-item a, .pagemenu .current-menu-parent a {background: #8b9b87 url(img/hover.png) repeat-x; color: #2B3A27; font-weight: normal;}
+
+.pagemenu li:hover {background: #8b9b87 url(img/hover.png) repeat-x;}
+
+.pagemenu .sub-menu {padding: 0 0 2px 0; margin: 0; list-style: none; position: absolute; top: -999px; background: #a1ad9e; opacity: 0;}
+.sub-menu li {float: none; display: block; position: static; padding-bottom: 1px;}
+.pagemenu li:hover .sub-menu {background: #8b9b87; top: 40px; opacity: 1; -webkit-transition: opacity .4s ease-in-out; transition: opacity .4s ease-in-out;}
+
+.pagemenu .sub-menu a {padding: 3px 10px; display: block; float: none; line-height: 1.45; margin: 0; color: #2b3a27; line-height: 1.5; background: none; white-space: nowrap;}
+.pagemenu li ul a:hover {color: #eee; background: #425c3b;}
+
+/* Dropdown zuerst unsichtbar */
+nav select {display: none;}
+
+
+/* Inhalt */
+#inhalt {float: left; width: 530px;}
+.start-nachricht {background: #e8e5d2; border: 1px solid #425c3b; margin: 2px 0 22px 0; padding: 12px 15px;}
+#inhalt h1 {font-size: 24px; font-weight: normal; line-height: 1.2; margin: 0 0 17px 0;}
+#inhalt .storytitle {margin: 0 0 7px 0;}
+#inhalt h2 {font-weight: normal; font-size: 20px; margin: 1.75rem 0 .4rem 0;}
+#inhalt h3 {font-weight: normal; font-size: 18px;}
+#inhalt h3 {font-weight: bold; font-size: 16px;}
+#inhalt a, :not(#inhalt .shariff a) {border-bottom: 1px solid #bdc3bc; color: #842; text-decoration: none;}
+#inhalt a:hover, :not(#inhalt .shariff a:hover) {border-bottom: 1px solid #898; color: #343;}
+#inhalt h1 a, #inhalt h2 a, #inhalt h3 a, #inhalt h4 a {color: #384f33; text-decoration: none;} #inhalt h1 a:hover, #inhalt h2 a:hover, #inhalt h3 a:hover, #inhalt h4 a:hover {text-decoration: underline;}
+#inhalt .der-beitrag {height: 1%; min-height: 147px;}
+#inhalt h3 {font-weight: normal;}
+#inhalt h3, #inhalt h4 {margin: 25px 0 7px 0;}
+.attachment-thumbnail {float: left; background: #e8e5d2; border: 1px solid #425c3b; margin-top: 2px; padding: 9px;}
+.ausschnitt {margin-left: 165px;}
+
+.beitrags-info {font-style: italic; position: relative; top: -7px;}
+.blog-feedback, .blog-feedback2 {border-top: 1px solid #bec3bc; padding: 5px 0 1px 0; margin: 7px 0 33px 0;}
+.blog-feedback2 {margin-bottom: 1px;}
+.blog-feedback3 {border: none; margin:12px 0 20px 0;}
+.shariff .col-5 {width: 100%;}
+
+/* Sidebar */
+#sidebar {background: url(img/sidebar.jpg) repeat-y -280px 0; float: right; width: 280px;}
+.sidebar-innen {background: url(img/sidebar.jpg) no-repeat; padding: 30px 0 0 30px;}
+.sunten {background: url(img/sidebar.jpg) no-repeat -560px 0; height: 32px;}
+
+#sidebar h3 {background: url(img/trennlinie.jpg) no-repeat -860px bottom; font-size: 17px; font-weight: normal; font-style: italic; margin: 0 0 7px; }
+#sidebar ul {list-style: none; margin-left: 0; padding-left: 0; margin-bottom: 17px;} #sidebar li ul {margin-left: 15px;}
+
+#sidebar li a, #footer li a {text-decoration: none; border-bottom: 1px solid #bdc3bc;} #sidebar li a:hover, #footer li a:hover { border-bottom: 1px solid #374c31;}
+
+/* Der Kommentarbereich */
+h3#comments {margin-top: 3px;}
+#comment    {width: 100%;}
+
+.comment-liste, .ping-liste, .children {list-style: none; margin-left: 0; padding-left: 0;}
+.children {margin-top: 15px;}
+.ping-liste {margin-top: 1.5rem;}
+.comment {margin-bottom: 15px; overflow: auto; padding: 12px; background: #e9e7d8; border: 1px solid #8e9c8a;}
+.depth-2, .depth-4 {margin-left: 15px; margin-bottom: 0; background: #faf9f5;} .depth-3 {margin-left: 15px;}
+.reply {text-align: right;}
+.kommentar-info {color: #555; font-size: 13px; margin-bottom: 15px;}
+.avatar {float: left; margin-right: 10px; margin-top: 2px;}
+
+
+/* Der Fussbereich */
+#footer {background: url(img/footer.jpg) no-repeat left bottom; padding: 15px 50px;}
+#footer1 {float: left; width: 48%;} #footer2 {float: right; width: 48%;}
+#footer h3 {font-size: 17px; font-weight: normal; font-style: italic; margin: 0 0 7px;}
+#footer ul {list-style: none; margin-left: 0; padding-left: 0;}
+
+/* Allgemeingueltige Elemente und Klassen */
+img {border: none;}
+blockquote {font-style: italic;}
+
+a {color: #2c3928;} a:hover {color: #000; text-decoration: none;}
+p, ul, dl, iframe {margin: 3px 0 17px 0;} li ul {margin: 3px 0 5px 0;}
+li {margin-bottom: 3px;}
+
+.zentriert {text-align: center;} .rechts {text-align: right;}
+.links-ausrichten {float: left; margin: 2px 10px 5px 0;} .rechts-ausrichten {float: right; margin: 2px 0 5px 10px;}
+.clearer {clear: both;}
+.bild-rahmen {background: #fff; border: 1px solid #425c3b; padding: 8px;}
+
+.bild {background: #fff; border: 1px solid #425c3b; padding: 5px;}
+
+.social-icons {list-style: none; margin: 0; padding: 0; position: absolute; top: -34px;}
+.social-icons li {display: inline;} .social-icons a {float: left; width: 24px; height: 24px; margin-right: 12px; text-indent: -9999px;}
+.feed-icon {background: url(img/social-icons.png) no-repeat;}
+.twitter-icon {background: url(img/social-icons.png) no-repeat -48px 0;}
+.facebook-icon {background: url(img/social-icons.png) no-repeat -24px 0;}
+
+/* VOLL DIE ABGERUNDTEN ECKEN */
+/*blockquote, .comment, .galerie, .gallery, #respond, .wp-caption, .attachment-thumbnail, .gallery img {
+-moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}*/
+
+/* WORDPRESS 2.6 (BILDERFUNKTION) */
+.aligncenter, div.aligncenter {display: block; margin-left: auto; margin-right: auto; text-align: center;}
+.alignleft {float: left; margin: 5px 10px 0 0;}
+.alignright {float: right; margin: 5px 0 0 10px;}
+
+.wp-caption {background: #fff; border: 1px solid #425c3b; text-align: center; margin-top: 3px; margin-bottom: 15px; padding: 9px 7px 7px 8px;}
+.wp-caption img {border: 1px solid #425c3b; margin: 0; padding: 0;}
+.wp-caption a img {border: 1px solid #842;}
+#mitte .wp-caption a {border: none;}
+.wp-caption .wp-caption-text {font-size: 13px; line-height: 17px; margin: 0; padding-top: 5px;}
+
+.gallery, .galerie { margin-bottom: 15px;}
+.gallery dl {margin: 0;}
+.gallery br {height: 1px; line-height: 1px;}
+.attachment-medium, .attachment-thumbnail, .gallery img {padding: 14px; background: #fff; border: 1px solid #425c3b;}
+.attachment-thumbnail, .gallery img {padding: 9px;}
+
+/* Galerie-Funktion: Plugin */
+.col-0,.col-1{width:100%;}
+.col-10{width:10%;}
+.col-11{width:9%;}
+.col-12{width:8.33%;}
+.col-13{width:7.6%;}
+.col-14{width:7.1%;}
+.col-15{width:6.66%;}
+.col-16{width:6.25%;}
+.col-17{width:5.83%;}
+.col-18{width:5.55%;}
+.col-19{width:5.25%;}
+.col-2{width:50%;}
+.col-20{width:4.95%;}
+.col-3{width:33%;}
+.col-4{width:25%;}
+.col-5{width:20%;}
+.col-6{width:16.5%;}
+.col-7{width:14%;}
+.col-8{width:12.4%;}
+.col-9{width:11%;}
+.gallery{clear:both;display:block;margin:0 auto;overflow:hidden;}
+.gallery .gallery-item{float:left;list-style:none;margin:0;overflow:hidden;padding:0;text-align:center;}
+.gallery .gallery-item img,.gallery .gallery-item img.thumbnail{height:auto;margin:0 auto;max-width:89%;/*padding:1%;*/}
+.gallery .gallery-row{clear:both;display:block;margin:0;overflow:hidden;}
+.gallery-caption{margin-left:0;}
+
+.gallery .gallery-row {margin-bottom: 19px;}
+#inhalt .gallery a {border: none;}
+.gallery-caption {display: none;}
+
+/* Hervorhebung der Navi-Punkte */
+.current_page_item, .current_page_parent, .home .m1, .blog .m2, .single .m2, .page-id-42 .m3, .page-id-380 .m4 {font-weight: bold;}
+.current_page_item ul, .current_page_parent ul {font-weight: normal;}
+#sidebar .page-item-8, #sidebar .page-item-23 {margin-bottom: 15px;}
+
+/* Allgemeingültige Klassen */
+.clearer {clear: both;}
+
+
+/**
+* "responsive" Ausgabe der Website
+* Media-Queries
+*/
+
+.video-block {position: relative; padding-bottom: 56.25%; /* ratio 16x9 */
+    height: 0; overflow: hidden; width: 100%; height: auto;}
+
+.video-block iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+@media (min-width: 977px) {
+.social-icons {left: 50px;}
+}
+
+@media (max-width: 976px) {
+#container, #mitte, #kopfbereich, #footer {background-size: contain;}
+#inhalt {float: none; width: 100%;}
+
+.wp-caption {max-width: 100% !important;}
+#inhalt .size-large, #inhalt .size-full, #inhalt .size-voll_bild_caption {max-width: 100%; height: auto;}
+
+#sidebar {background:none; border-top: 1px solid #bec3bc; float: none; width: 100%; margin-top: 1.5rem; padding: 1.5rem 0 0 0;}
+.sidebar-innen {background: transparent; padding: 0 0 1rem 0; overflow: hidden;}
+#sidebar h3 {background: none; border-bottom: 1px solid #bec3bc;}
+.sunten {background: transparent; height: 1px;}
+.sidebar-rest {float: left; width: 200px;}
+.sidebar-empfehlungen       {float: right; max-width: 250px;}
+.sidebar-empfehlungen img   {max-width: 250px; height: auto !important;}
+
+/* Mobile Navi jetzt sichtbar und die Desktop-Navi unsichtbar */
+nav select  {display: inline-block; position: absolute; top: -79px; left: 5px; padding: 2px; background: #eceadd;}
+.menu-eltern {font-weight: bold;}
+.pagemenu   {display: none !important;}
+
+.social-icons {right: 40px}
+}
+
+@media (max-width: 850px) {
+#kopfbereich {height: 180px; background-size: 100% 100%;}
+#kopfbereich .logo {font-size: 50px;}
+}
+@media (max-width: 800px) {
+#kopfbereich {height: 170px;}
+#kopfbereich .logo {font-size: 40px; margin-top: 80px;}
+}
+@media (max-width: 750px) {
+#kopfbereich {height: 160px;}
+#kopfbereich .logo {margin-top: 70px;}
+#kopfbereich .unterzeile {font-size: 18px;}
+}
+@media (max-width: 640px) {
+#kopfbereich {height: 120px; padding: 1px 25px;}
+#kopfbereich .logo {font-size: 30px; margin-top: 60px;}
+#kopfbereich .unterzeile {font-size: 16px;}
+#mitte {margin: 12px 25px 0 25px;}
+.sidebar-rest {width: 190px;}
+#footer {padding: 15px 25px;}
+#inhalt h1 {font-size: 20px;}
+}
+@media (max-width: 560px) {
+
+}
+@media (max-width: 510px) {
+#kopfbereich {height: 100px;}
+#kopfbereich .logo {font-size: 28px; margin-top: 50px;}
+#kopfbereich .unterzeile {font-size: 16px;}
+}
+@media (max-width: 508px) {
+.sidebar-rest, .sidebar-empfehlungen {float: none; margin-left: 0;}
+}
+@media (max-width: 460px) {
+#kopfbereich {height: 90px;}
+#kopfbereich .logo {font-size: 28px; margin-top: 40px;}
+#kopfbereich .unterzeile {font-size: 16px;}
+}
+@media (max-width: 410px) {
+#kopfbereich {height: 80px;}
+#kopfbereich .logo {font-size: 24px; margin-top: 40px;}
+#kopfbereich .unterzeile {font-size: 15px;}
+}
+@media (max-width: 375px) {
+#kopfbereich .logo {margin-top: 35px;}
+}
+@media (max-width: 322px) {
+#kopfbereich .logo {font-size: 23px; margin-top: 30px;}
+}
